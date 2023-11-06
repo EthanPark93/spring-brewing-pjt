@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html th:replace="~{layout/main :: layout(~{::title}, ~{::main})}" xmlns:th="http://www.thymeleaf.org">
+<html th:replace="~{layout/main :: layout( ~{::title}, ~{::main}, ~{::link} )}" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-
-    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/pages/index.css}">
     <title>메인 페이지 타이틀</title>
 </head>
 

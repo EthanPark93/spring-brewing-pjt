@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html th:fragment="layout (title, content)" xmlns:th="http://www.thymeleaf.org">
-
+<html th:fragment="layout (title, content, links)" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/header.css}">
-    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/footer.css}">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/fragments/header.css}">
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/fragments/footer.css}">
+
+    <th:block th:replace="${links}"/>
+
     <title th:replace="${title}">레이아웃 타이틀</title>
 </head>
 
