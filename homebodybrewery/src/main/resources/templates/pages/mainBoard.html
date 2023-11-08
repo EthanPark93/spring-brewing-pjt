@@ -2,16 +2,13 @@
 <html th:replace="~{layout/main :: layout( ~{::title}, ~{::main}, ~{::link} )}" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-  <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/pages/index.css}">
-  <title>메인 페이지 타이틀</title>
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/pages/index.css}">
+    <title>메인 페이지 타이틀</title>
 </head>
 
 <body>
 
-<main>
-  <p>보드 메인~</p>
-  <div>보드 메인 페이지 포함 내용</div>
-</main>
+<main th:replace="~{fragments/basicBoard :: basicBoard}"></main>
 
 </body>
 </html>
