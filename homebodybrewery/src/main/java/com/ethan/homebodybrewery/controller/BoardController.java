@@ -12,4 +12,9 @@ public class BoardController {
     public String mainBoard() {
         return "pages/mainBoard";
     }
+
+    @GetMapping("/free")
+    public String freeBoard() {
+        return "pages/freeBoard";
+    }
 }
