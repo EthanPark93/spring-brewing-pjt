@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko", xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/pages/login.css}">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="loginContainer">
+
+    <header class="header">
+
+        <h1 class="logo">
+            <a href="/"><span class="acchidden">HB Brew</span></a>
+        </h1>
+        <div class="tab">
+            <ul>
+                <li class="btNexon">
+                    <button type="button">ID 로그인
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <main id="contents">
+
+        <div class="loginSec">
+
+            <!--ID Login--->
+            <div class="basicLogin" id="basicLogin">
+                <p class="loginMsg">ID 혹은 비밀번호를 잘못 입력하셨거나 등록되지 않은 ID입니다.</p>
+                <fieldset>
+                    <legend class="acchidden">ID 로그인</legend>
+                    <div class="id">
+                        <input type="text" class="input01" id="txtNexonID" placeholder="ID (아이디 또는 이메일)">
+                    </div>
+                    <p class="inputMsg nexonid">ID (아이디 또는 이메일)를 입력해주세요.</p>
+                    <div class="pass">
+                        <input type="password" class="input01" id="txtPWD" placeholder="비밀번호">
+                    </div>
+                    <p class="inputMsg password">비밀번호를 입력해주세요.</p>
+                    <div class="saveid" style="">
+                        <input type="checkbox" id="chkKeepLogin">
+                        <label for="chkKeepLogin">로그인 상태 유지</label>
+                    </div>
+                    <div class="btLogin">
+                        <button type="button" class="button01">
+                            ID 로그인
+                        </button>
+                    </div>
+                </fieldset>
+            </div>
+            <p class="loginMenu">
+                <a href="#">회원가입</a>
+                <a href="#">ID 찾기</a>
+                <a href="#">비밀번호 찾기</a>
+            </p>
+
+            <div class="social-login">
+                <button type="button" class="btNexon">
+                    <span class="icon"></span><span>Kakao 계정으로 로그인</span>
+                </button>
+
+                <button type="button" class="btFacebook">
+                    <span class="icon"></span><span>Facebook 계정으로 로그인</span>
+                </button>
+
+                <button type="button" class="btGoogle">
+                    <span class="icon"></span><span>Google 계정으로 로그인</span>
+                </button>
+
+                <button type="button" class="btNaver">
+                    <span class="icon"></span><span>Naver 계정으로 로그인</span>
+                </button>
+
+                <button type="button" class="btApple">
+                    <span class="icon"></span><span>Apple 계정으로 로그인</span>
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="loginFooter">
+        <p class="copyright">© HB Corporation All Rights Reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>

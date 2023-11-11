@@ -2,21 +2,17 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
 }
 
 /* 헤더 스타일 */
 header * {
     color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 header {
     position: relative;
-    background-color: black;
-    opacity: 0.8;
 }
 
 header a {
@@ -29,9 +25,37 @@ header nav {
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: center;
 
     z-index: 1;
+}
+
+.top-nav {
+    width: 100%;
+    justify-content: center;
+    background-color: #cccccc;
+    color: black;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+.buttonContainer li {
+    width: 100px;
+}
+
+.bottom-nav {
+    background-color: black;
+    opacity: 0.8;
+    justify-content: center;
+}
+
+.bottom-nav * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header h1 {
@@ -105,11 +129,11 @@ header .subMenu li:hover a {
 }
 
 /* 가로 메뉴 스타일링 */
-header nav > ul {
+header .bottom-nav > ul {
     display: flex;
 }
 
-header nav > ul > li {
+header .bottom-nav li {
     flex: 1;
     text-align: center;
 }
