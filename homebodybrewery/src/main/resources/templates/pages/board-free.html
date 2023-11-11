@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html th:replace="~{layout/main :: layout( ~{::title}, ~{::main}, ~{::link} )}" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/pages/freeBoard.css}">
+    <title>메인 페이지 타이틀</title>
+</head>
+
+<body>
+
+<main>
+    <section class="boardContainer">
+        <h2>자유게시판</h2>
+
+        <article class="postingContainer">
+            <table>
+                <colgroup>
+                    <col width="10%"/>
+                    <col width="50%"/>
+                    <col width="15%"/>
+                    <col width="15%"/>
+                    <col width="10%"/>
+                </colgroup>
+
+                <thead>
+                <tr class="posting">
+                    <th>글 번호</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                    <th>좋아요</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="posting">
+                    <td>15</td>
+                    <td><a th:href="@{/}">글제목입니다 3214</a></td>
+                    <td>뭐야뭐야</td>
+                    <td>2023-06-34</td>
+                    <td>23</td>
+                </tr>
+                <tr class="posting">
+                    <td>14</td>
+                    <td><a th:href="@{/}">글제목입니다 3214</a></td>
+                    <td>뭐야뭐야</td>
+                    <td>2023-06-34</td>
+                    <td>23</td>
+                </tr>
+                <tr class="posting">
+                    <td>13</td>
+                    <td><a th:href="@{/}">글제목입니다 3214</a></td>
+                    <td>뭐야뭐야</td>
+                    <td>2023-06-34</td>
+                    <td>23</td>
+                </tr>
+                <tr class="posting">
+                    <td>12</td>
+                    <td><a th:href="@{/}">글제목입니다 3214</a></td>
+                    <td>뭐야뭐야</td>
+                    <td>2023-06-34</td>
+                    <td>23</td>
+                </tr>
+                <tr class="posting">
+                    <td>11</td>
+                    <td><a th:href="@{/}">글제목입니다 3214</a></td>
+                    <td>뭐야뭐야</td>
+                    <td>2023-06-34</td>
+                    <td>23</td>
+                </tr>
+                <tr class="posting">
+                    <td>10</td>
+                    <td><a th:href="@{/}">글제목입니다 3214</a></td>
+                    <td>뭐야뭐야</td>
+                    <td>2023-06-34</td>
+                    <td>23</td>
+                </tr>
+                <tr class="posting">
+                    <td>9</td>
+                    <td><a th:href="@{/}">글제목입니다 3214</a></td>
+                    <td>뭐야뭐야</td>
+                    <td>2023-06-34</td>
+                    <td>23</td>
+                </tr>
+                <tr class="posting">
+                    <td>8</td>
+                    <td><a th:href="@{/}">글제목입니다 3214</a></td>
+                    <td>뭐야뭐야</td>
+                    <td>2023-06-34</td>
+                    <td>23</td>
+                </tr>
+                <tr class="posting">
+                    <td>7</td>
+                    <td><a th:href="@{/}">글제목입니다 3214</a></td>
+                    <td>뭐야뭐야</td>
+                    <td>2023-06-34</td>
+                    <td>23</td>
+                </tr>
+                <tr class="posting">
+                    <td>6</td>
+                    <td><a th:href="@{/}">글제목입니다 3214</a></td>
+                    <td>뭐야뭐야</td>
+                    <td>2023-06-34</td>
+                    <td>23</td>
+                </tr>
+                <tr class="posting">
+                    <td>5</td>
+                    <td><a th:href="@{/}">글제목입니다 3214</a></td>
+                    <td>테스트닉네임</td>
+                    <td>2023-06-34</td>
+                    <td>234</td>
+                </tr>
+                <tr class="posting">
+                    <td>4</td>
+                    <td><a th:href="@{/}">글제목입니다 3214</a></td>
+                    <td>테스트닉네임</td>
+                    <td>2023-06-34</td>
+                    <td>234</td>
+                </tr>
+                <tr class="posting">
+                    <td>3</td>
+                    <td><a th:href="@{/}">글제목입니다 3214</a></td>
+                    <td>테스트닉네임</td>
+                    <td>2023-06-34</td>
+                    <td>234</td>
+                </tr>
+                <tr class="posting">
+                    <td>2</td>
+                    <td><a th:href="@{/}">글제목입니다 3214</a></td>
+                    <td>테스트닉네임</td>
+                    <td>2023-06-34</td>
+                    <td>234</td>
+                </tr>
+                <tr class="posting">
+                    <td>1</td>
+                    <td><a th:href="@{/}">글제목입니다 3214</a></td>
+                    <td>테스트닉네임</td>
+                    <td>2023-06-34</td>
+                    <td>234</td>
+                </tr>
+                </tbody>
+            </table>
+        </article>
+        <div class="pagingContainer">
+
+            <nav class="paging-nav">
+                <ul>
+                    <li><a th:href="@{/}">이전 페이지</a></li>
+                </ul>
+                <ul>
+                    <li><a class="paging-btn" th:href="@{/}">1</a></li>
+                </ul>
+                <ul>
+                    <li><a class="paging-btn" th:href="@{/}">2</a></li>
+                </ul>
+                <ul>
+                    <li><a class="paging-btn" th:href="@{/}">3</a></li>
+                </ul>
+                <ul>
+                    <li><a class="paging-btn" th:href="@{/}">4</a></li>
+                </ul>
+                <ul>
+                    <li><a class="paging-btn" th:href="@{/}">5</a></li>
+                </ul>
+                <ul>
+                    <li><a class="paging-btn" th:href="@{/}">6</a></li>
+                </ul>
+                <ul>
+                    <li><a class="paging-btn" th:href="@{/}">7</a></li>
+                </ul>
+                <ul>
+                    <li><a class="paging-btn" th:href="@{/}">8</a></li>
+                </ul>
+                <ul>
+                    <li><a class="paging-btn" th:href="@{/}">9</a></li>
+                </ul>
+                <ul>
+                    <li><a class="paging-btn" th:href="@{/}">10</a></li>
+                </ul>
+                <ul>
+                    <li><a th:href="@{/}">다음 페이지</a></li>
+                </ul>
+            </nav>
+
+            <div class="serchBar">
+                <form>
+                    <input>
+                </form>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
