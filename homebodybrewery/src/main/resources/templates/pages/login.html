@@ -12,45 +12,37 @@
     <header class="header">
 
         <h1 class="logo">
-            <a href="/"><span class="acchidden">HB Brew</span></a>
+            <a href="/"><span class="hidden">HB Brew</span></a>
         </h1>
-        <div class="tab">
-            <ul>
-                <li class="btNexon">
-                    <button type="button">ID 로그인
-                    </button>
-                </li>
-            </ul>
-        </div>
+<!--        <div class="tab">-->
+<!--            <ul>-->
+<!--                <li class="bt">-->
+<!--                    <button type="button">ID 로그인</button>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
 
     </header>
-    <main id="contents">
 
-        <div class="loginSec">
+    <main>
+
+        <section class="loginSec">
 
             <!--ID Login--->
-            <div class="basicLogin" id="basicLogin">
-                <p class="loginMsg">ID 혹은 비밀번호를 잘못 입력하셨거나 등록되지 않은 ID입니다.</p>
-                <fieldset>
-                    <legend class="acchidden">ID 로그인</legend>
-                    <div class="id">
-                        <input type="text" class="input01" id="txtNexonID" placeholder="ID (아이디 또는 이메일)">
-                    </div>
-                    <p class="inputMsg nexonid">ID (아이디 또는 이메일)를 입력해주세요.</p>
-                    <div class="pass">
-                        <input type="password" class="input01" id="txtPWD" placeholder="비밀번호">
-                    </div>
-                    <p class="inputMsg password">비밀번호를 입력해주세요.</p>
-                    <div class="saveid" style="">
-                        <input type="checkbox" id="chkKeepLogin">
-                        <label for="chkKeepLogin">로그인 상태 유지</label>
-                    </div>
-                    <div class="btLogin">
-                        <button type="button" class="button01">
-                            ID 로그인
-                        </button>
-                    </div>
-                </fieldset>
+            <div class="basicLogin">
+                <div class="id">
+                    <input type="text" class="input01" placeholder="ID (아이디 또는 이메일)">
+                </div>
+                <div class="pass">
+                    <input type="password" class="input01" placeholder="비밀번호">
+                </div>
+                <div class="saveid">
+                    <input type="checkbox" id="chkKeepLogin">
+                    <label for="chkKeepLogin">로그인 상태 유지</label>
+                </div>
+                <div class="btLogin">
+                    <button type="button" class="button01">ID 로그인</button>
+                </div>
             </div>
             <p class="loginMenu">
                 <a href="#">회원가입</a>
@@ -59,33 +51,34 @@
             </p>
 
             <div class="social-login">
-                <button type="button" class="btNexon">
+                <button type="button" class="btKakao social-button">
                     <span class="icon"></span><span>Kakao 계정으로 로그인</span>
                 </button>
 
-                <button type="button" class="btFacebook">
+                <button type="button" class="btFacebook social-button">
                     <span class="icon"></span><span>Facebook 계정으로 로그인</span>
                 </button>
 
-                <button type="button" class="btGoogle">
+                <button type="button" class="btGoogle social-button">
                     <span class="icon"></span><span>Google 계정으로 로그인</span>
                 </button>
 
-                <button type="button" class="btNaver">
+                <button type="button" class="btNaver social-button">
                     <span class="icon"></span><span>Naver 계정으로 로그인</span>
                 </button>
 
-                <button type="button" class="btApple">
+                <button type="button" class="btApple social-button">
                     <span class="icon"></span><span>Apple 계정으로 로그인</span>
                 </button>
             </div>
-        </div>
+        </section>
 
     </main>
 
     <footer class="loginFooter">
         <p class="copyright">© HB Corporation All Rights Reserved.</p>
     </footer>
+
 </div>
 
 </body>
