@@ -16,9 +16,9 @@ public class SecurityConfig {
         http.csrf(CsrfConfigurer::disable);
         http.authorizeHttpRequests(authorize ->
                 authorize
-//                        .requestMatchers("/user/**").authenticated()
-//                        .requestMatchers("/manager/**").hasAnyRole("ADMIN", "MANAGER")
-//                        .requestMatchers("/admin/**").hasAnyRole("ADMIN")
+                        .requestMatchers("/user/**").authenticated()
+                        .requestMatchers("/manager/**").hasAnyRole("ADMIN", "MANAGER")
+                        .requestMatchers("/admin/**").hasAnyRole("ADMIN")
                         .anyRequest().permitAll()
         ).formLogin(formLogin ->
                 formLogin
@@ -27,5 +27,12 @@ public class SecurityConfig {
 
         return http.build();
     }
+
+//    // 해당 메서드만 구현해도 기본 로그인 페이지로 이동하지 않는다.
+//    @Bean
+//    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+//
+//        return http.build();
+//    }
 
 }
