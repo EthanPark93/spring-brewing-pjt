@@ -21,6 +21,6 @@ public class BoardController {
 
     @GetMapping("/{category}")
     public String showBoardCategory(@PathVariable String category) {
-        return "pages/board-"+category;
+        return "pages/board-" + category;
     }
 }
