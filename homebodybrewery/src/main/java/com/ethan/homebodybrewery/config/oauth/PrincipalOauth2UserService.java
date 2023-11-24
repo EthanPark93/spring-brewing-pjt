@@ -52,9 +52,9 @@ public class PrincipalOauth2UserService extends DefaultOAuth2UserService {
             oAuth2UserInfo = new NaverUserInfo((Map) oAuth2User.getAttributes().get("response"));
         }
 
-        String provider = oAuth2UserInfo.getProvider(); // google
+        String provider = oAuth2UserInfo.getProvider();
         String providerId = oAuth2UserInfo.getProviderId();
-        String username = provider + "_" + providerId; // google_34234뭐시기
+        String username = provider + "_" + providerId;
         String password = bCryptPasswordEncoder.encode("임의비번");
         String email = oAuth2UserInfo.getEmail();
         String role = "ROLE_USER";
