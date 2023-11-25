@@ -6,9 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/login")
 public class BasicLoginController {
-    @GetMapping
+    @GetMapping("/login")
     public String login(Authentication authentication) {
 //
         if (authentication != null && authentication.isAuthenticated()) {
