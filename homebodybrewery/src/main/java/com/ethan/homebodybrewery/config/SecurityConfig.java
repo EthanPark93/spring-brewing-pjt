@@ -30,13 +30,13 @@ public class SecurityConfig {
                         .anyRequest().permitAll()
         ).formLogin(formLogin ->
                         formLogin
-                                .loginPage("/login")
+                                .loginPage("/loginForm")
 //                        .usernameParameter("파라미터 바꾸고싶으면 여기에 입력")
                                 .loginProcessingUrl("/login") // 시큐리티에서 낚아챔
                                 .defaultSuccessUrl("/")
         ).oauth2Login(oauth2 ->
                 oauth2
-                        .loginPage("/login")
+                        .loginPage("/loginForm")
                         .userInfoEndpoint(userInfoEndpoint -> userInfoEndpoint
                                 .userService(principalOauth2UserService)
                         )
